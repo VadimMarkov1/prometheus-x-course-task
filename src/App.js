@@ -45,8 +45,8 @@ function App() {
               isAuthenticated={isAuthenticated}
               username={username}
               handleSignOut={handleSignOut}/>}>
-              <Route path="signin" element={<SignIn onSignIn={handleSignIn} isAuthenticated={isAuthenticated}/>} />
-              <Route path="/" element={isAuthenticated ? <BookList /> : <SignIn onSignIn={handleSignIn} isAuthenticated={isAuthenticated}/>}/>
+              <Route path="/signin" element={<SignIn onSignIn={handleSignIn} isAuthenticated={isAuthenticated}/>} />
+              <Route path="/prometheus-x-course-task" element={isAuthenticated ? <BookList /> : <SignIn onSignIn={handleSignIn} isAuthenticated={isAuthenticated}/>}/>
               <Route path="/books/:id" element={isAuthenticated ? <SpecificBook /> : <Navigate to="/signin" replace />} />
               <Route path="/cart" element={isAuthenticated ? <Cart /> : <Navigate to="/signin" replace />} />
               <Route path="*" element={<NotFoundPage isAuthenticated={isAuthenticated} />} />

@@ -12,7 +12,7 @@ export function Header({ isAuthenticated, username, handleSignOut }) {
   return (
     <header>
       <img src={favicon} className="favicon" alt="Book store" />
-      <Link to="/" className="ref">
+      <Link to="/prometheus-x-course-task" className="ref">
         <h3 className="jsBookStore">JS BOOK STORE/Markov Vadym</h3>
       </Link>
       {isAuthenticated ? (
