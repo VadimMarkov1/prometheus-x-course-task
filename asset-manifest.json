@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/x-course-task/static/css/main.bf5dd08a.css",
-    "main.js": "/x-course-task/static/js/main.15d2fc35.js",
-    "static/media/default-book-image.jpg": "/x-course-task/static/media/default-book-image.d462b6ffa8c48a32d6c1.jpg",
-    "static/media/avatar.png": "/x-course-task/static/media/avatar.0d14c6999b4a5c8e86a7.png",
-    "static/media/favicon.ico": "/x-course-task/static/media/favicon.2ff480ecc1f06f1010e5.ico",
-    "static/media/cart.svg": "/x-course-task/static/media/cart.5a1c3c755c07e59db7d65be6bc8d8bfb.svg",
-    "index.html": "/x-course-task/index.html",
-    "static/media/arrow.svg": "/x-course-task/static/media/arrow.9855251460868b3abc85.svg",
-    "main.bf5dd08a.css.map": "/x-course-task/static/css/main.bf5dd08a.css.map",
-    "main.15d2fc35.js.map": "/x-course-task/static/js/main.15d2fc35.js.map"
+    "main.css": "/prometheus-x-course-task/static/css/main.fe0492f4.css",
+    "main.js": "/prometheus-x-course-task/static/js/main.3988c06b.js",
+    "static/media/default-book-image.jpg": "/prometheus-x-course-task/static/media/default-book-image.d462b6ffa8c48a32d6c1.jpg",
+    "static/media/avatar.png": "/prometheus-x-course-task/static/media/avatar.0d14c6999b4a5c8e86a7.png",
+    "static/media/favicon.ico": "/prometheus-x-course-task/static/media/favicon.2ff480ecc1f06f1010e5.ico",
+    "static/media/cart.svg": "/prometheus-x-course-task/static/media/cart.5a1c3c755c07e59db7d65be6bc8d8bfb.svg",
+    "index.html": "/prometheus-x-course-task/index.html",
+    "static/media/arrow.svg": "/prometheus-x-course-task/static/media/arrow.9855251460868b3abc85.svg",
+    "main.fe0492f4.css.map": "/prometheus-x-course-task/static/css/main.fe0492f4.css.map",
+    "main.3988c06b.js.map": "/prometheus-x-course-task/static/js/main.3988c06b.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf5dd08a.css",
-    "static/js/main.15d2fc35.js"
+    "static/css/main.fe0492f4.css",
+    "static/js/main.3988c06b.js"
   ]
 }
