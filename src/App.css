@@ -1,38 +1,417 @@
-.App {
-  text-align: center;
+body {
+    margin: 0;
+    background-color: #f6f6f6;
+    font-family: SegoeUI-SemiBold-final,  sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+    display: flex;
+    align-items: center;
+    background: #5479c1;
+    color: white;
+    height: 50px;
+    padding: 0 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.favicon {
+    height: 40px;
+    padding-right: 20px;
+}
+
+.emptyPage {
+    display: flex;
+    justify-content: center;
+}
+
+.imageAvatar {
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.userName {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputName {
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+.inputName[type="submit"]:hover {
+    background:  #5479c1;
+    color: white;
+}
+
+.inputName[type="submit"]:active {
+    background: transparent;
+    color: black;
+    
+}
+
+
+footer {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #5479c1;
+    color: white;
+    align-items: center;
+    justify-content: center;
   }
+
+.main {
+    width: 60%;
+    margin: 0 auto;
+}  
+
+.main h1 {
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.searchFilterSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.search {
+    position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.searchInput {
+    margin-left: 10px;
+    height: 40px;
+    width: 400px;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1 solid darkgray;
+    word-spacing: inherit;
+}
+
+.sort {
+    height: 40px;
+    width: 250px;
+    border-radius: 8px;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    font-size: 18px;
+    border: 1 solid darkgray;
+    word-spacing: inherit;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+  
+.sort:not([multiple]) {
+    padding-right: 1.2em;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 0.25em) 0.6em;
+    background-size: 0.85em auto;
+    background-image: url("assets/arrow.svg");
+}
+  
+.sort::-ms-expand {
+    display: none;
+}
+
+.bookList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.bookCard {
+    width: 23%;
+    min-width: 260px;
+    padding: 30px;
+    margin-bottom: 40px;
+    border: solid 1px black;
+    overflow: hidden;
+}
+
+.bookCard img {
+    width: 250px;
+    height: 320px;
+
+}
+
+.bookPrice {
+    display: inline;
+    margin-right: 60px;
+    font-weight: bold;
+    margin-right: 80px;
+}
+
+.bookName {
+    font-weight: bold;
+    font-size: large;
+}
+
+.viewButton {
+    height: 30px;
+    width: 80px;
+    border-radius: 8px;
+    cursor: pointer;
+ 
+}
+
+.viewButtonRef {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+.cartImageHeader, .avatarImageHeader {
+    width: 40px;
+    margin-left: 20px;
+}
+
+.signOut, .buttonPrice, .purchaseButton {
+    margin-left: 20px;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: medium;
+} 
+
+.signOut:hover, .viewButton:hover, .buttonPrice:hover, .purchaseButton:hover  {
+    background: #5479c1;
+    color: white;
+}
+
+.signOut:active {
+    background: transparent;
+    color: black;
+}
+
+.headerAuth {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.headerUsername {
+    margin-left: 20px;
+}
+
+.wrapper {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.price {
+    display: flex;
+    font-weight: bold;
+    font-size: x-large;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 35%;
+}
+
+
+.bookTitle, .discription {
+    font-size: x-large;
+    text-align: justify;
+}
+
+.discription {
+    text-indent: 25px;
+}
+
+.bookTitle {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.priceElement {
+    width: 50%;
+    height: 15%;
+}
+
+.count {
+    width: 25%;
+    height: 10%;
+    border-radius: 10px;
+    font-size: x-large;
+    font-weight: bold;
+    
+}
+
+
+.buttonPrice {
+    margin-left: auto;
+    margin-top: 30%;
+    
+}  
+
+.number {
+    text-align: end;
+}
+
+.cartWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  
+img[alt="Empty Cart"] {
+    width: 10%;
+    margin-top: 10%;
   }
+
+  .cartItemsWrapper {
+    display: flex;
+    border: 1px solid #5479c1;
+  }
+
+  .cartItemsWrapper:not(:first-child) {
+    border-top: none;
+  } 
+    
+
+  .purchaseButtonWrapper {
+    display: flex;
+  }
+  
+  .purchaseButton {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+.cartItemPrice {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.cartItemName {
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+.cartTotalPrice {
+    text-align: right;
+    padding-right: 10px; 
+    font-weight: bold;
+    font-size: large;
+}
+
+.imgBook img {
+    width: 250px;
+}
+
+.ref {
+    text-decoration: none; 
+    color: white;
+}
+ 
+
+@media screen and (max-width: 800px) {
+
+    .jsBookStore, .headerUsername {
+        font-size: small;
+    }
+
+    .avatarImageHeader {
+        display: none;
+    }
+
+    .signOut {
+        margin-left: 10px;
+        height: 40px;
+        width: 50px;
+        font-weight: normal;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: small;
+    } 
+
+    .searchFilterSection{
+        flex-direction: column;
+
+    }
+
+    .searchInput, .sort {
+        width: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .input-name {
+        width: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .image-avatar {
+        height: 200px;
+        width: 200px;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .wrapper {
+        font-size: normal;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (width: 320px) {
+    .inputName {
+        width: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .imageAvatar {
+        height: 200px;
+        width: 200px;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
 }
